@@ -1,0 +1,6 @@
+[package]
+name = "ping-pg-tls"
+version = "0.1.0"
+authors = ["Nattapong Amornbunchornvej <nattapong@chochoe.net>"]
+
+[dependencies]
