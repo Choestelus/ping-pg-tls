@@ -4,3 +4,8 @@ version = "0.1.0"
 authors = ["Nattapong Amornbunchornvej <nattapong@chochoe.net>"]
 
 [dependencies]
+openssl = "^0.9"
+
+[dependencies.postgres]
+version = "^0.15"
+features = ["with-openssl", "with-native-tls"]
