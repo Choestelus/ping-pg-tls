@@ -26,7 +26,7 @@ fn main() {
 
     let conn = Connection::connect(
         "postgres://firefox@localhost:5432",
-        TlsMode::Prefer(&negotiator),
+        TlsMode::Require(&negotiator),
     ).unwrap();
     let res = conn.query("SELECT 1+1 as foo", &[]).unwrap();
     for row in &res {
